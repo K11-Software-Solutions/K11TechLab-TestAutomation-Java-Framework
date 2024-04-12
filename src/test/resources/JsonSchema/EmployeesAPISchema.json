@@ -1,0 +1,192 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "The Employee API Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "EmployeeID",
+      "EmpFirstName",
+      "EmpLastName",
+      "EmpAddress",
+      "StateID",
+      "CityID",
+      "DepartmentID",
+      "CityObj",
+      "StateObj",
+      "DepartmentObj"
+    ],
+    "properties": {
+      "EmployeeID": {
+        "$id": "#/items/properties/EmployeeID",
+        "type": "integer",
+        "title": "The Employeeid Schema",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "EmpFirstName": {
+        "$id": "#/items/properties/EmpFirstName",
+        "type": "string",
+        "title": "The Empfirstname Schema",
+        "default": "",
+        "examples": [
+          "string"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "EmpLastName": {
+        "$id": "#/items/properties/EmpLastName",
+        "type": "string",
+        "title": "The Emplastname Schema",
+        "default": "",
+        "examples": [
+          "string"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "EmpAddress": {
+        "$id": "#/items/properties/EmpAddress",
+        "type": "string",
+        "title": "The Empaddress Schema",
+        "default": "",
+        "examples": [
+          "string"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "StateID": {
+        "$id": "#/items/properties/StateID",
+        "type": "integer",
+        "title": "The Stateid Schema",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "CityID": {
+        "$id": "#/items/properties/CityID",
+        "type": "integer",
+        "title": "The Cityid Schema",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "DepartmentID": {
+        "$id": "#/items/properties/DepartmentID",
+        "type": "integer",
+        "title": "The Departmentid Schema",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "CityObj": {
+        "$id": "#/items/properties/CityObj",
+        "type": "object",
+        "title": "The Cityobj Schema",
+        "required": [
+          "CityID",
+          "CityName"
+        ],
+        "properties": {
+          "CityID": {
+            "$id": "#/items/properties/CityObj/properties/CityID",
+            "type": "integer",
+            "title": "The Cityid Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "CityName": {
+            "$id": "#/items/properties/CityObj/properties/CityName",
+            "type": "string",
+            "title": "The Cityname Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      },
+      "StateObj": {
+        "$id": "#/items/properties/StateObj",
+        "type": "object",
+        "title": "The Stateobj Schema",
+        "required": [
+          "StateID",
+          "StateName",
+          "StateAbbreviation"
+        ],
+        "properties": {
+          "StateID": {
+            "$id": "#/items/properties/StateObj/properties/StateID",
+            "type": "integer",
+            "title": "The Stateid Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "StateName": {
+            "$id": "#/items/properties/StateObj/properties/StateName",
+            "type": "string",
+            "title": "The Statename Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "StateAbbreviation": {
+            "$id": "#/items/properties/StateObj/properties/StateAbbreviation",
+            "type": "string",
+            "title": "The Stateabbreviation Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      },
+      "DepartmentObj": {
+        "$id": "#/items/properties/DepartmentObj",
+        "type": "object",
+        "title": "The Departmentobj Schema",
+        "required": [
+          "DepartmentID",
+          "DepartmentName"
+        ],
+        "properties": {
+          "DepartmentID": {
+            "$id": "#/items/properties/DepartmentObj/properties/DepartmentID",
+            "type": "integer",
+            "title": "The Departmentid Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "DepartmentName": {
+            "$id": "#/items/properties/DepartmentObj/properties/DepartmentName",
+            "type": "string",
+            "title": "The Departmentname Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

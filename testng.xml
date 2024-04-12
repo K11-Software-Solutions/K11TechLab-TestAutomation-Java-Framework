@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="K11 Tech Lab Smoke Test Suite 1" thread-count="1" parallel="methods" >
+	<parameter name="report.config" value="config/extent-config.xml" />
+	<listeners>
+		<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter" />
+	        <listener class-name="com.K11.automation.coreframework.retryAnalyzer.AnnotationTransformer" />
+		<listener class-name="com.K11.automation.coreframework.retryAnalyzer.RetryTestListenerAdapter" />
+
+	</listeners>
+
+	<test name="  ">
+		<classes>
+			<class name="" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
