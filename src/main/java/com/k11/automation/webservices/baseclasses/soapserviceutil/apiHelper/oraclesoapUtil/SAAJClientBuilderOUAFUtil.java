@@ -24,8 +24,8 @@ public class SAAJClientBuilderOUAFUtil {
     public final static String WSSE_Username_Elem = "Username";
     public final static String WSSE_Password_Elem = "Password";
     static LoadProperties prop= new LoadProperties();
-    public final static String username = prop.getProperty("uat.rmb.username");
-    public final static String password = prop.getProperty("uat.rmb.password");
+    public final static String username = prop.getProperty("service.username");
+    public final static String password = prop.getProperty("service.password");
 
     public final static String namespace = "cm";
    // public final static String namespaceURI = ;

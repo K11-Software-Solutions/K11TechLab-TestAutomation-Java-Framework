@@ -1,4 +1,4 @@
-package com.k11.automation.coreframework;
+package com.k11.automation.selenium.baseclasses;
 
 import com.k11.automation.coreframework.logger.Log;
 import org.testng.ITestContext;

@@ -15,8 +15,8 @@ public class JaxWsHandlerResolver implements HandlerResolver {
     public List<Handler> getHandlerChain(PortInfo arg0) {
         List<Handler> hchain = new ArrayList<Handler>();
         LoadProperties prop= new LoadProperties();
-        String username = prop.getProperty("mot1.rmb.username");
-        String password = prop.getProperty("mot1.rmb.password");
+        String username = prop.getProperty("service.username");
+        String password = prop.getProperty("service.password");
         hchain.add(new JaxWsLoggingHandler());
         hchain.add(new WSSecurityHeaderSOAPHandler(username, password));
         return hchain;

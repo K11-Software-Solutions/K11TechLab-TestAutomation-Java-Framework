@@ -3,7 +3,7 @@ package com.k11.automation.webservices.baseclasses;
 import io.restassured.RestAssured;
 import io.restassured.config.HttpClientConfig;
 import io.restassured.config.RestAssuredConfig;
-import com.k11.automation.coreframework.BaseTestCase;
+import com.k11.automation.selenium.baseclasses.BaseTestCase;
 import com.k11.automation.coreframework.logger.Log;
 import com.k11.automation.selenium.baseclasses.ApplicationProperties;
 import com.k11.automation.webservices.baseclasses.filters.ParallelRequestFilter;

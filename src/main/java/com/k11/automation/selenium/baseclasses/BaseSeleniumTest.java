@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.MessageFormat;
-import com.k11.automation.coreframework.BaseTestCase;
+import com.k11.automation.selenium.baseclasses.BaseTestCase;
 import com.k11.automation.coreframework.logger.Log;
 import com.k11.automation.coreframework.util.ScreenShotUtil;
 import org.openqa.selenium.WebDriver;

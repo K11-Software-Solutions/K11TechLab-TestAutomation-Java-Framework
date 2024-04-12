@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class StringsUtility {
 
     //Checking for palindromes in Java 7 or earlier
-   @Test (priority = 1)
+   // String problem #  1)
     public boolean isPalindrome(String s) {
         StringBuilder sb = new StringBuilder();
         for (char c : s.toCharArray()) {
@@ -30,7 +30,7 @@ public class StringsUtility {
       Space Complexity:
       O(n), where n is the length of the strings. This space is used to store the character arrays created from the input strings.
       */
-     @Test (priority = 2)
+     // String problem #  2)
     public static boolean anagramsCheckerUsingArraysSort(String str1, String str2) {
         // If length of strings is not same, then they cannot be anagram
         if (str1.length() != str2.length()) {
@@ -59,7 +59,7 @@ public class StringsUtility {
       Space Complexity:
       O(1), as the count array size is fixed and does not grow with the input string length.
     */
-    @Test (priority = 3)
+    // String problem #  3)
     public static boolean areAnagrams(String str1, String str2) {
             // If length of strings is not same, then they cannot be anagram
             if (str1.length() != str2.length()) {
@@ -84,7 +84,7 @@ public class StringsUtility {
        return true;
     }
 
-    @Test (priority = 4)
+    // String problem #  4)
     public static boolean isUniqueChars(String str) {
         if(str.length()>128) return false;
         boolean[] char_set=new boolean[128]; //Assuming the string is an ASCII string
@@ -98,7 +98,7 @@ public class StringsUtility {
         return true;
     }
 
-    @Test (priority = 5)
+    // String problem #  5)
     public static void findFirstNonRepeatingCharacter(String input) {
         for (char i : input.toCharArray()) {
             if (input.indexOf(i) == input.lastIndexOf(i)) {
@@ -108,7 +108,7 @@ public class StringsUtility {
         }
     }
 
-    @Test (priority = 6)
+    // String problem #  6)
     void findOccurance(String str, String substringToFind) {
         int start = 0, count=0;
         while (true) {
@@ -122,7 +122,7 @@ public class StringsUtility {
     }
 
     //Java Program : Find the occurrence of characters from string
-    @Test (priority = 7)
+    // String problem #  7)
     public static Map<Character, Integer> countCharacterOccurrences(String str) {
        Map<Character, Integer> occurrenceMap = new HashMap<>();
        // Iterate through the string and count occurrences of each character
@@ -133,7 +133,7 @@ public class StringsUtility {
    }
 
 
-    @Test (priority = 8)
+    // String problem #  8)
     public static boolean canConstruct(String str1, String str2) {
         if (str1.length() > str2.length())
             return false;
@@ -155,7 +155,7 @@ public class StringsUtility {
         return true;
     }
 
-    @Test (priority = 9)
+    // String problem #  9)
     static void removeDuplicates(char[] str) {
         Set<Character> hashset = new LinkedHashSet<Character>();
 
@@ -177,7 +177,7 @@ public class StringsUtility {
         str[writeIndex] = '\0';
     }
 
-    @Test (priority = 10)
+    // String problem #  10)
     public static void removeDuplicateLetters(String s) {
         //To remove special char: punctuations and symbols
         String s1=s.replaceAll("[^\\p{L}\\p{Z}]","");
@@ -201,7 +201,7 @@ public class StringsUtility {
         System.out.println(sb);
       }
 
-     @Test (priority = 11)
+     // String problem #  11)
        public static int countVowels(String input) {
             int count = 0;
             String vowels = "aeiouAEIOU";
@@ -216,7 +216,7 @@ public class StringsUtility {
     //Write java program to find the output:
     // Input a1b2c4O2,
     // Output a-bb-cccc-OO
-    @Test (priority = 12)
+    // String problem #  12)
         public static String generateOutput(String input) {
             StringBuilder output = new StringBuilder();
             for (int i = 0; i < input.length(); i++) {
@@ -240,7 +240,7 @@ public class StringsUtility {
         }
 
        //Java program to find the occurrence of duplicate values in a sequence string with the help of map
-       @Test (priority = 13)
+       // String problem #  13)
         public static void findDuplicateWordsInString(String str) {
             Map<String, Integer> wordCountMap = new HashMap<>();
 
@@ -283,7 +283,7 @@ public class StringsUtility {
             Here's how you can implement it in Java:
             import java.util.*; */
 
-    @Test (priority = 14)
+    // String problem #  14)
     public static void findSecondRepeatingWordAndOccurrence(String input) {
             String[] words = input.toLowerCase().split("\\W+"); // Split on non-word characters
             Map<String, Integer> wordCounts = new HashMap<>();
@@ -327,7 +327,7 @@ public class StringsUtility {
         // Given a number (eg 25) write a function to return the string 'Twenty Five'
         /* To convert a number into its corresponding English words representation, you can approach this by breaking down the number into its place values (e.g., hundreds, tens, and ones) and mapping each segment to its corresponding word. For numbers up to 99, you'll specifically need to handle the units (1-9), the special cases for ten to nineteen, and the tens (twenty, thirty, etc.).
           Here's a simple Java function that handles numbers up to 99, as per the example given: */
-        @Test (priority = 15)
+        // String problem #  15)
         public static String numberToWords(int num) {
             if (num < 0 || num > 99) {
                 return "Number out of range";
@@ -363,7 +363,7 @@ public class StringsUtility {
          * @param input The input string containing numbers.
          * @return The sum of all extracted numbers.
      */
-    @Test (priority = 16)
+    // String problem #  16)
      public static int sumOfNumbers(String input) {
             // Pattern to match numbers in the string
             Pattern pattern = Pattern.compile("\\d+");
